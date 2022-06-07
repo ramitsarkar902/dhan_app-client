@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.scss";
 import { FiPhoneCall } from "react-icons/fi";
 import { VscThreeBars } from "react-icons/vsc";
+import { HiMenuAlt4, HiX, HiMenu } from "react-icons/hi";
 function Navbar() {
+  const [dropDown, setDropDown] = useState(false);
   return (
-    <div className="navbar__wrapper pt-2 flex justify-center relative items-center ">
+    <div className="navbar__wrapper flex justify-center relative items-center ">
       <div className="absolute navbar__logo">
         <img
           className="w-full h-full"
@@ -12,10 +14,13 @@ function Navbar() {
           alt="app logo"
         />
       </div>
-      <div className="navbar__navigation-titles flex">
-        {["Home", "About", "Login"].map((title, index) => (
-          <div className="navbar__navigation-title " key={index}>
-            {title}
+      <div className="navbar__navigation-titles flex items-center justify-center">
+        {["Home", "About", "Login"].map((item, index) => (
+          <div
+            className="navbar__navigation-title flex-col"
+            key={`link-${item}`}
+          >
+            <a href={`#${item}`}>{item}</a>
           </div>
         ))}
       </div>
@@ -56,7 +61,28 @@ function Navbar() {
           );
         })}
       </div>
-      <VscThreeBars className="navbar__dropdown-icon" />
+      <VscThreeBars
+        onClick={(e) => {
+          e.preventDefault();
+          setDropDown(!dropDown);
+        }}
+        className="navbar__dropdown-icon"
+      />
+      {dropDown && (
+        <ul className="navbar__dropdown-wrapper">
+          <HiX
+            className="navbar__dropdown-icon"
+            onClick={() => setDropDown(false)}
+          />
+          {["Home", "About", "Login"].map((title, index) => (
+            <li className="navbar__dropdown-item" key={index}>
+              <a href={`#${title}`} onClick={() => setDropDown(false)}>
+                {title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
