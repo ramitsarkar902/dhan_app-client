@@ -1,3 +1,3 @@
 import Navbar from "./Navbar/Navbar.jsx";
-
-export { Navbar };
+import HeroSection from "./HeroSection/HeroSection.jsx";
+export { Navbar, HeroSection };
