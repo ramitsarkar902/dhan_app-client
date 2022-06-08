@@ -4,7 +4,10 @@ import { MdOutlineStickyNote2 } from "react-icons/md";
 import { FiLogOut } from "react-icons/fi";
 function HeroSection() {
   return (
-    <div className="herosection__wrapper flex justify-start app__container">
+    <div
+      id="Home"
+      className="herosection__wrapper flex justify-start app__container"
+    >
       <div className="herosection__left-div">
         <div className="herosection__left-top mb-3 w-full flex-col">
           <h2>Get instant loans in just 15 minutes</h2>
