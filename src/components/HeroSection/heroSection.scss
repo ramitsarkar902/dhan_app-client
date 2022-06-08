@@ -1,12 +1,12 @@
 .herosection__wrapper {
   position: relative;
-  padding: 0px 95px 0px 95px;
   display: flex;
+  min-height: 100vh;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
     width: 100%;
-    padding: 0px 30px;
+    padding: 30px 30px 10px 30px;
   }
 }
 .herosection__left-div,
