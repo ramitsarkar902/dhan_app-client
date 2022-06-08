@@ -1,0 +1,113 @@
+.aboutComponent__wrapper {
+  height: 361px;
+  width: 286px;
+  border-radius: 20px;
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  box-shadow: 1px 4px 12px 0px #c1c1c175;
+  margin-bottom: 45px;
+  margin-right: 40px;
+  flex: 1 0 21%;
+  transition: all 0.5s ease-in-out;
+
+  img {
+    height: 90px;
+    width: 90px;
+    border-radius: 0px;
+
+    @media (max-width: 768px) {
+      height: 50px;
+      width: 50px;
+    }
+  }
+
+  h2 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    margin: 20px 0px;
+    color: #3b3f5c;
+
+    @media (max-width: 768px) {
+      font-size: 22px;
+    }
+  }
+
+  p {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #444444;
+
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+  }
+
+  button {
+    position: absolute;
+    right: 0;
+    bottom: 31px;
+    color: blue;
+    height: 20px;
+    width: 146.41024780273438px;
+    border-radius: nullpx;
+
+    a {
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: center;
+
+      &:hover {
+        border-bottom: 1px solid blue;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      height: 20px;
+    }
+  }
+
+  &:hover {
+    border: 1px solid #3b3f5c;
+    box-shadow: 1px 4px 12px 0px #c1c1c175;
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 768px) {
+    height: 200px;
+
+    margin-bottom: 20px;
+    margin-right: 0px;
+    flex: 1 0 21%;
+  }
+}
