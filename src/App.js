@@ -1,4 +1,4 @@
-import { HeroSection, Navbar } from "./components";
+import { About, HeroSection, Navbar } from "./components";
 import "./app.scss";
 function App() {
   return (
@@ -6,6 +6,7 @@ function App() {
       <Navbar />
 
       <HeroSection />
+      <About />
     </div>
   );
 }
