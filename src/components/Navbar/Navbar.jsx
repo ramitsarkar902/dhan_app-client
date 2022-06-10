@@ -14,10 +14,10 @@ function Navbar() {
           alt="app logo"
         />
       </div>
-      <div className="navbar__navigation-titles flex items-center justify-center">
-        {["Home", "About", "Login"].map((item, index) => (
+      <div className="navbar__navigation-titles flex items-center justify-center mx-5">
+        {["Home", "About", "Apply", "Login"].map((item, index) => (
           <div
-            className="navbar__navigation-title flex-col"
+            className="navbar__navigation-title flex-col flex items-center justify-center"
             key={`link-${item}`}
           >
             <a href={`#${item}`}>{item}</a>
@@ -74,7 +74,7 @@ function Navbar() {
             className="navbar__dropdown-icon"
             onClick={() => setDropDown(false)}
           />
-          {["Home", "About", "Login"].map((title, index) => (
+          {["Home", "About", "Apply", "Login"].map((title, index) => (
             <li className="navbar__dropdown-item" key={index}>
               <a href={`#${title}`} onClick={() => setDropDown(false)}>
                 {title}

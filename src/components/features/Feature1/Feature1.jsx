@@ -2,7 +2,7 @@ import React from "react";
 import "./feature1.scss";
 const Feature1 = () => {
   return (
-    <div className="app__container feature-1__wrapper">
+    <div className="app__container feature-1__wrapper" id="Apply">
       <div>
         <h2>Instant approval for all type of loan applications across India</h2>
         <p>
@@ -51,7 +51,11 @@ const Feature1 = () => {
             src="https://s3-alpha-sig.figma.com/img/2034/eb6f/e3a8e5b68b980b1a5bc443b7eed0163c?Expires=1655683200&Signature=Onr0uDnTkVRGVLF-eMvn1geWsjJ0nK2cm1Ia2uCq5CtHzyqHL26p6nFN3hYRCyQRL6fUQ134PvJeT5o1SBhAVF6ytwFN~WLw~1c5eQSEOVGo~mnOIpKyWGLMKe8rs0IaIh4nPL43TipeVkxTBeDWtabZJ1jNUYtR8d-TdZHLTmesqXUY88bKBAdyrfxchks11st6Jv~iJylQz7IREghYV4qPYo-8ZvVFGyjEcyNREGbtDu2PNoYsb~NoRhZLCMd2X3UCJf1dzIcjY~notRi2DTI1MY77OS-K2IXUH1U58TfgQ-oen1cOZDESbGZwZl0D0re9G2Q5sCJTAjrW5QvZgg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
             alt=""
           />
-          <img className="z-20 relative" src="" alt="" />
+          <img
+            className="z-20 relative"
+            src="https://s3-alpha-sig.figma.com/img/4d3c/6a3c/69f730b7b01348d0358a2f68411b04d1?Expires=1655683200&Signature=RY7A6bCpGOtLnrbNqCuvPb1J5e7ON6RHWFogngbKuIwq6iZ~6Z9Xn-9~owyRwvksYUTGrkuTq-y6pjlRGtiihpt9Ad~2cYMN-0f~GP-1Kdyt7Hv550swK9H7jRagMqS8T4UpDZN3n81B2RAUm2Ps7NCBDMHg5JN5EZ~jkuMKyslsWDRqITHeTJJ54i2y8WkSIzqIKPPntKuydTRTzS~KNaretK~-uur6ZgZTnAaMcl1r0jULU~B2PIezXaeEuu4VQxjlzWO12ykzUgBIjSV71o-A--9OTZ9c8~PKmilHBID9ycWqZH3oogZ7lk1snDRma9BHYJO8v9Q3PHAl-XVZAQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+            alt=""
+          />
           <h2>Fast Disbursals</h2>
           <p>
             Reliable and instant with minimal documentation. Get money credited

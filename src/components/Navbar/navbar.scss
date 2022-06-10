@@ -30,7 +30,7 @@
 
 .navbar__navigation-title {
   height: 53px;
-  width: 197.58621215820312px;
+  width: 120.58621215820312px;
   margin-top: 30px;
   border: none;
   //typography
@@ -43,18 +43,22 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 
+  /* */
+
   &:hover {
     margin-top: 35px;
     color: var(--secondary-color);
     font-weight: 800;
+    border-bottom: 1px solid var(--secondary-color);
   }
 
   @media screen and (max-width: 768px) {
     display: none;
   }
 }
+
 .navbar__right-icons {
-  right: 167px;
+  right: 107px;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -104,8 +108,10 @@
   width: 30px;
   height: 30px;
   cursor: pointer;
+  display: none;
 
   @media screen and (max-width: 768px) {
+    display: block;
     width: 30px;
     height: 30px;
   }

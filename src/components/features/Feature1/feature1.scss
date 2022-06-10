@@ -1,6 +1,6 @@
 .feature-1__wrapper {
   min-height: 100vh;
-  padding-top: 2vh;
+  padding-top: 5vh;
   display: flex;
   align-items: center;
   background-image: url("https://img.freepik.com/free-photo/front-view-white-texture-background-3d-3d-illustration_78895-2516.jpg?w=2000");
@@ -143,7 +143,7 @@
 
       &:hover {
         transform: scale(1.02);
-        cursor: wait;
+        cursor: pointer;
         box-shadow: 1px 4px 12px 0px #c1c1c175;
       }
     }
