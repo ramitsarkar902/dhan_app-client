@@ -1,6 +1,7 @@
 import React from "react";
 import "./about.scss";
 import AboutCard from "./aboutCard/AboutCard.jsx";
+
 const aboutData = [
   {
     id: 1,
@@ -46,7 +47,7 @@ const aboutData = [
 ];
 function About() {
   return (
-    <div id="About" className=" about__wrapper app__container">
+    <div id="About" className=" about__wrapper app__container bg-white">
       <h1 className="text-center">
         We also get you the lowest interest rate loan offers from multiple Banks
         and NBFCs
