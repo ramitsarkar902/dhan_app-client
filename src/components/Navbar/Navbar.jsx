@@ -6,7 +6,7 @@ import { HiMenuAlt4, HiX, HiMenu } from "react-icons/hi";
 function Navbar() {
   const [dropDown, setDropDown] = useState(false);
   return (
-    <div className="navbar__wrapper flex justify-center items-center ">
+    <div className="navbar__wrapper flex justify-center items-center">
       <div className="absolute navbar__logo">
         <img
           className="w-full h-full"
