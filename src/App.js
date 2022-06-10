@@ -1,4 +1,11 @@
-import { About, HeroSection, Navbar } from "./components";
+import {
+  About,
+  HeroSection,
+  Navbar,
+  Feature1,
+  Feature2,
+  Feature3,
+} from "./components";
 import "./app.scss";
 import { RiBankLine } from "react-icons/ri";
 import { AiFillEyeInvisible } from "react-icons/ai";
@@ -24,6 +31,9 @@ function App() {
           <p>5,00,000+ Happy Customers</p>
         </div>
       </div>
+      <Feature1 />
+      <Feature2 />
+      <Feature3 />
     </div>
   );
 }
