@@ -133,6 +133,7 @@
       text-align: left;
       margin-bottom: 15px;
       cursor: pointer;
+      transition: all 0.3s ease-in-out;
 
       &:hover {
         text-shadow: 0px 0px 10px #fff;
@@ -153,6 +154,7 @@
       text-align: left;
       margin: 5px 0px;
       cursor: pointer;
+      transition: all 0.3s ease-in-out;
 
       &:hover {
         text-shadow: 0px 0px 10px #fff;
@@ -205,7 +207,7 @@
       height: 27px;
       width: 1098px;
       color: #ffffff;
-
+      transition: all 0.3s ease-in-out;
       font-family: Poppins;
       font-size: 24px;
       font-weight: 400;
