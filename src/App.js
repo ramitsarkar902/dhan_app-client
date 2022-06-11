@@ -5,6 +5,7 @@ import {
   Feature1,
   Feature2,
   Feature3,
+  Footer,
 } from "./components";
 import "./app.scss";
 import { RiBankLine } from "react-icons/ri";
@@ -33,7 +34,8 @@ function App() {
       </div>
       <Feature1 />
       <Feature2 />
-      <Feature3 />
+      {/*  <Feature3 /> */}
+      <Footer />
     </div>
   );
 }
